@@ -1,0 +1,15 @@
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Infrastructure.deps.json
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Infrastructure.runtimeconfig.json
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Infrastructure.runtimeconfig.dev.json
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Infrastructure.dll
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Infrastructure.pdb
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Core.dll
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\bin\Debug\netcoreapp3.1\DevFreela.Core.pdb
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.csprojAssemblyReference.cache
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.AssemblyInfoInputs.cache
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.AssemblyInfo.cs
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.csproj.CopyComplete
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.dll
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.pdb
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Infrastructure\obj\Debug\netcoreapp3.1\DevFreela.Infrastructure.genruntimeconfig.cache

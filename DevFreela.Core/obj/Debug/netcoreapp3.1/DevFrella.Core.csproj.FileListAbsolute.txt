@@ -1,0 +1,8 @@
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\bin\Debug\netcoreapp3.1\DevFrella.Core.deps.json
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\bin\Debug\netcoreapp3.1\DevFrella.Core.dll
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\bin\Debug\netcoreapp3.1\DevFrella.Core.pdb
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\obj\Debug\netcoreapp3.1\DevFrella.Core.AssemblyInfoInputs.cache
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\obj\Debug\netcoreapp3.1\DevFrella.Core.AssemblyInfo.cs
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\obj\Debug\netcoreapp3.1\DevFrella.Core.csproj.CoreCompileInputs.cache
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\obj\Debug\netcoreapp3.1\DevFrella.Core.dll
+C:\Projetos\CursoNetCore\DevFreela\DevFrella.Core\obj\Debug\netcoreapp3.1\DevFrella.Core.pdb
