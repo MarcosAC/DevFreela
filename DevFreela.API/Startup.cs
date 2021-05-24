@@ -1,11 +1,11 @@
 using DevFreela.API.Filters;
 using DevFreela.Application.Commands.CreateProject;
-using DevFreela.Application.Services.Implementations;
-using DevFreela.Application.Services.Interfaces;
 using DevFreela.Application.Validators;
+using DevFreela.Core.Repositories;
 using DevFreela.Core.Services;
 using DevFreela.Infrastructure.Auth;
 using DevFreela.Infrastructure.Persistence;
+using DevFreela.Infrastructure.Persistence.Repositories;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -37,9 +37,13 @@ namespace DevFreela.API
 
             services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(connectionString));
 
-            services.AddScoped<IProjectService, ProjectService>();
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<ISkillService, SkillService>();
+            //services.AddScoped<IProjectService, ProjectService>();
+            //services.AddScoped<IUserService, UserService>();
+            //services.AddScoped<ISkillService, SkillService>();
+
+            services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ISkillRepository, SkillRepository>();
             services.AddScoped<IAuthService, AuthService>();
 
             services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
