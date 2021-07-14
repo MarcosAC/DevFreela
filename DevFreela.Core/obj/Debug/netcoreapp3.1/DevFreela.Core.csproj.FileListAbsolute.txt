@@ -1,9 +1,9 @@
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\bin\Debug\netcoreapp3.1\DevFreela.Core.deps.json
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\bin\Debug\netcoreapp3.1\DevFreela.Core.dll
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\bin\Debug\netcoreapp3.1\DevFreela.Core.pdb
-C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.csprojAssemblyReference.cache
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.AssemblyInfoInputs.cache
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.AssemblyInfo.cs
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.csproj.CoreCompileInputs.cache
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.dll
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.pdb
+C:\Projetos\CursoNetCore\DevFreela\DevFreela.Core\obj\Debug\netcoreapp3.1\DevFreela.Core.csproj.AssemblyReference.cache
