@@ -12,4 +12,8 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  titulo = 'Freelancers';
+
+  public freelancers = ['Marcos', 'Gildelson', 'Reginaldo', 'Bernardo'];
+
 }
