@@ -12,8 +12,8 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  titulo = 'Projetos';
+  public title = 'Projetos';
 
-  public projetos = ['Mobile', 'Sistema Web', 'Banco de Dados', 'ChatBot'];
+  public projects = ['Mobile', 'Sistema Web', 'Banco de Dados', 'ChatBot'];
 
 }
