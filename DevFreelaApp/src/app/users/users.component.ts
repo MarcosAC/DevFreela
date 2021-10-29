@@ -14,6 +14,10 @@ export class UsersComponent implements OnInit {
 
   public title = 'Freelancers';
 
-  public freelancers = ['Marcos', 'Gildelson', 'Reginaldo', 'Bernardo'];
-
+  public freelancers = [
+    {id: '1', name: 'Marcos', email: 'marcos@email.com', skills: 'Xamarin Forms C#' },
+    {id: '2', name: 'Gildelson', email: 'gil@email.com', skills: 'Python'},
+    {id: '3', name: 'Reginaldo', email: 'reginaldo@email.com', skills: 'Java'},
+    {id: '4', name: 'Bernardo', email: 'bernardo@email.com', skills: 'C#'}
+  ];
 }

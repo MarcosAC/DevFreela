@@ -1,5 +1,18 @@
 <app-title [title]="title"></app-title>
 
-<ul>
-    <li *ngFor="let freelancer of freelancers">{{freelancer}}</li>
-</ul>
+<table class="table border border-light">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Skills</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let freelancer of freelancers">
+        <td>{{freelancer.name}}</td>
+        <td>{{freelancer.email}}</td>
+        <td>{{freelancer.skills}}</td>
+      </tr>      
+    </tbody>
+  </table>

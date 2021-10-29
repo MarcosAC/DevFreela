@@ -1,5 +1,18 @@
 <app-title [title]="title"></app-title>
 
-<ul>
-    <li *ngFor="let project of projects">{{project}}</li>
-</ul>
+<table class="table border border-light">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Custo Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td>{{project.title}}</td>
+        <td>{{project.description}}</td>
+        <td>{{project.totalCost}}</td>
+      </tr>      
+    </tbody>
+  </table>
