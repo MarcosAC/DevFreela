@@ -11,9 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { FormUserComponent } from './formUser/formUser.component';
+import { FormProjectComponent } from './formProject/formProject.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [						
     AppComponent,
     LoginComponent,
     UsersComponent,
@@ -21,7 +22,8 @@ import { FormUserComponent } from './formUser/formUser.component';
     HomeComponent,
     NavComponent,
       TitleComponent,
-      FormUserComponent
+      FormUserComponent,
+      FormProjectComponent
    ],
   imports: [
     BrowserModule,
