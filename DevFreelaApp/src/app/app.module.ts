@@ -10,20 +10,20 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { TitleComponent } from './title/title.component';
-import { FormUserComponent } from './formUser/formUser.component';
-import { FormProjectComponent } from './formProject/formProject.component';
+import { UserFormComponent } from './userForm/userForm.component';
+import { ProjectFormComponent } from './projectForm/projectForm.component';
 
 @NgModule({
-  declarations: [						
+  declarations: [									
     AppComponent,
     LoginComponent,
     UsersComponent,
     ProjectsComponent,
     HomeComponent,
     NavComponent,
-      TitleComponent,
-      FormUserComponent,
-      FormProjectComponent
+    TitleComponent,
+    UserFormComponent,
+    ProjectFormComponent
    ],
   imports: [
     BrowserModule,
