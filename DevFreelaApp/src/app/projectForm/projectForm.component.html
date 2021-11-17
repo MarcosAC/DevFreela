@@ -5,12 +5,12 @@
     </div>
 
     <div class="card-body">
-      <form>
+      <form [formGroup]="projectFormGroup" (submit)="createProject()">
         <div class="row mb-4">
           <div class="col">
             <div class="form-outline">
               <label class="form-label">Titulo</label>
-              <input type="text" class="form-control" />          
+              <input type="text" formControlName="titulo" class="form-control" />          
             </div>        
           </div>
         </div>
@@ -19,7 +19,7 @@
           <div class="col">
             <div class="form-outline">
               <label class="form-label">Descrição</label>
-              <input type="text" class="form-control" />          
+              <input type="text" formControlName="descricao" class="form-control" />          
             </div>        
           </div>
         </div>
@@ -28,7 +28,7 @@
           <div class="col-3">
             <div class="form-outline">
               <label class="form-label">Valor do Projeto</label>
-              <input type="text" class="form-control" />          
+              <input type="text" formControlName="valor" class="form-control" />          
             </div>        
           </div>
         </div>
@@ -70,7 +70,7 @@
           <div class="col-10">
             <div class="form-outline mb-4">
               <label class="form-label">Comentarios</label>
-              <textarea class="form-control" rows="5"></textarea>     
+              <textarea formControlName="comentarios" class="form-control" rows="5"></textarea>     
             </div>
           </div>
         </div>

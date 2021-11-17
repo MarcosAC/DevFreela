@@ -25,4 +25,8 @@ export class UserFormComponent implements OnInit {
     });
   }
 
+  createAccount() {
+    console.log(this.userFormGroup.value);
+  }
+
 }
