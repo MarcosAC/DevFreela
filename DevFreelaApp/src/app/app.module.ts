@@ -12,6 +12,7 @@ import { NavComponent } from './nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { UserFormComponent } from './userForm/userForm.component';
 import { ProjectFormComponent } from './projectForm/projectForm.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [									
@@ -28,7 +29,9 @@ import { ProjectFormComponent } from './projectForm/projectForm.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
