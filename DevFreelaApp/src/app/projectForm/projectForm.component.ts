@@ -21,7 +21,11 @@ export class ProjectFormComponent implements OnInit {
     this.projectFormGroup = this.formBuilder.group({
       titulo: ['', Validators.required],
       descricao: ['', Validators.required],
-      valor: ['', Validators.required],  
+      valor: ['', Validators.required],
+      dataCriacao: ['', Validators.required],
+      dataInicio: ['', Validators.required],
+      dataFinalizacao: ['', Validators.required],
+      status: ['', Validators.required],
       comentarios: ['', Validators.required],          
     });
   }
