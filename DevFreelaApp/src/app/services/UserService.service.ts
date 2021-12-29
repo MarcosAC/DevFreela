@@ -8,6 +8,7 @@ import { Login } from '../models/Login';
 @Injectable({
   providedIn: 'root'
 })
+
 export class UserServiceService {
 
   baseURL = `${environment.mainUrlAPI}users`;
@@ -23,7 +24,7 @@ export class UserServiceService {
   }
 
   put(login: Login, id: number) {
-    return this.http.put(`${this.baseURL}/${id}/login`, Login);
+    return this.http.put(`${this.baseURL}/${id}/login`, login);
   }
 
 }
