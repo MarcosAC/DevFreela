@@ -1,9 +1,9 @@
-import { ProjectComment } from './../models/ProjectComment';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { environment } from './../../environments/environment';
 import { Project } from '../models/Project';
+import { ProjectComment } from './../models/ProjectComment';
 
 @Injectable({
   providedIn: 'root'
