@@ -12,6 +12,7 @@ import { NavComponent } from './components/shared/nav/nav.component';
 import { TitleComponent } from './components/shared/title/title.component';
 import { UserFormComponent } from './components/userForm/userForm.component';
 import { ProjectFormComponent } from './components/projectForm/projectForm.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ProjectFormComponent } from './components/projectForm/projectForm.compo
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
