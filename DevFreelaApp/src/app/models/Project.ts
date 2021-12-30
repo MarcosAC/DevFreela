@@ -1,4 +1,4 @@
-import { ProjectStatusEnum } from "../utils/ProjectStatusEnum";
+import { ProjectStatusEnum } from "../util/ProjectStatusEnum";
 import { ProjectComment } from "./ProjectComment";
 import { User } from "./User";
 
