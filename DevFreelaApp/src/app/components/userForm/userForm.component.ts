@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { User } from 'src/app/models/User';
+import { UserService } from 'src/app/services/UserService';
 
 @Component({
   selector: 'app-userForm',
@@ -10,7 +13,9 @@ export class UserFormComponent implements OnInit {
 
   userFormGroup!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  freelance!: User;
+
+  constructor(private formBuilder: FormBuilder, private userService: UserService, private route: ActivatedRoute) {
     this.createForm();
    }
 
@@ -29,7 +34,14 @@ export class UserFormComponent implements OnInit {
   }
 
   createAccount() {
-    console.log(this.userFormGroup.value);
+    this.freelance = {...this.userFormGroup.value}
+    this.userService.post(this.freelance)
+    .subscribe(
+      () => {
+        console.log("Dados do freelancer cadastrado com sucesso.");
+      }, () => {
+        console.log("Erro ao cadastrar freelancer.");
+      }
+    );
   }
-
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { environment } from './../../environments/environment';
+import { environment } from '../../environments/environment';
 import { User } from '../models/User';
 import { Login } from '../models/Login';
 
@@ -9,7 +9,7 @@ import { Login } from '../models/Login';
   providedIn: 'root'
 })
 
-export class UserServiceService {
+export class UserService {
 
   baseURL = `${environment.mainUrlAPI}users`;
 
