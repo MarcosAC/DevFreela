@@ -6,7 +6,7 @@
       </div>
 
       <div class="card-body">
-        <form [formGroup]="userFormGroup" (click)="createAccount()">
+        <form [formGroup]="userFormGroup">
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
@@ -65,7 +65,7 @@
           </div>
 
           <div class="justify-content-start">
-            <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
+            <button type="submit" class="btn btn-primary btn-block" (click)="createAccount()">Criar Conta</button>
             <button type="submit" class="btn btn-primary btn-block ms-2">Cancelar</button>
           </div>
         </form>
