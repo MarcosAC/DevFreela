@@ -17,24 +17,27 @@ export class UserFormComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private userService: UserService, private route: ActivatedRoute) {
     this.createForm();
-   }
+  }
 
   ngOnInit() {
   }
 
   createForm() {
     this.userFormGroup = this.formBuilder.group({
-      nome: ['', Validators.required],
-      dataNascimento: ['', Validators.required],
+      fullName: ['', Validators.required],
       email: ['', Validators.required],
-      senha: ['', Validators.required],
-      tipoUsuario: ['', Validators.required],
+      birthDate: ['', Validators.required],
+      createdAt: [Date.now()],
+      password: ['', Validators.required],
+      role: ['', Validators.required],
       skills: ['', Validators.required]
     });
   }
 
   createAccount() {
+    //console.log(this.userFormGroup.value);
     this.freelance = {...this.userFormGroup.value}
+    console.log(this.freelance);
     this.userService.post(this.freelance)
     .subscribe(
       () => {

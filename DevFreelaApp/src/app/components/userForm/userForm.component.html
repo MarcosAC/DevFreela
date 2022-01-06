@@ -11,7 +11,7 @@
             <div class="col">
               <div class="form-outline">
                 <label class="form-label">Nome</label>
-                <input type="text" formControlName="nome" class="form-control" />
+                <input type="text" formControlName="fullName" class="form-control" />
               </div>
             </div>
           </div>
@@ -20,7 +20,7 @@
             <div class="row justify-content-start">
               <div class="col-3">
                 <label class="form-label">Data de Nascimento</label>
-                <input type="date" formControlName="dataNascimento" class="form-control" />
+                <input type="date" formControlName="birthDate" class="form-control" />
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
             <div class="col">
               <div class="form-outline mb-4">
                 <label class="form-label">Senha</label>
-                <input type="email" formControlName="senha" class="form-control" />
+                <input type="email" formControlName="password" class="form-control" />
               </div>
             </div>
           </div>
@@ -44,10 +44,10 @@
           <div class="row">
             <div class="col">
               <div class="form-outline mb-4">
-                <select formControlName="tipoUsuario" class="form-select">
+                <select formControlName="role" class="form-select">
                   <option value="1">Tipo de Usuario</option>
-                  <option value="3">Freelance</option>
-                  <option value="4">Empresa</option>
+                  <option value="Freelance">Freelance</option>
+                  <option value="Empresa">Empresa</option>
                 </select>
               </div>
             </div>
@@ -56,9 +56,9 @@
               <div class="form-outline mb-4">
                 <select formControlName="skills" class="form-select">
                   <option value="1">Skills</option>
-                  <option value="3">C#</option>
-                  <option value="4">Pythn</option>
-                  <option value="2">Java</option>
+                  <option value="C#">C#</option>
+                  <option value="Python">Python</option>
+                  <option value="Java">Java</option>
                 </select>
               </div>
             </div>
