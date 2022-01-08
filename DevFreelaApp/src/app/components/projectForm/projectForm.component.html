@@ -5,81 +5,82 @@
     </div>
 
     <div class="card-body">
-      <form [formGroup]="projectFormGroup" (submit)="createProject()">
+      <form [formGroup]="projectFormGroup">
         <div class="row mb-4">
           <div class="col">
             <div class="form-outline">
               <label class="form-label">Titulo</label>
-              <input type="text" formControlName="titulo" class="form-control" />          
-            </div>        
+              <input type="text" formControlName="title" class="form-control" />
+            </div>
           </div>
         </div>
-    
+
         <div class="row mb-4">
           <div class="col">
             <div class="form-outline">
               <label class="form-label">Descrição</label>
-              <input type="text" formControlName="descricao" class="form-control" />          
-            </div>        
+              <input type="text" formControlName="description" class="form-control" />
+            </div>
           </div>
         </div>
-    
+
         <div class="row mb-4">
           <div class="col-3">
             <div class="form-outline">
               <label class="form-label">Valor do Projeto</label>
-              <input type="text" formControlName="valor" class="form-control" />          
-            </div>        
+              <input type="text" formControlName="totalCost" class="form-control" />
+            </div>
           </div>
         </div>
-    
+
         <div class="row">
           <div class="col">
             <div class="form-outline mb-4">
               <label class="form-label">Data de Criação</label>
-              <input type="date" formControlName="dataCriacao" class="form-control" />
+              <input type="date" formControlName="createdAt" class="form-control" />
             </div>
           </div>
-    
+
           <div class="col">
             <div class="form-outline mb-4">
               <label class="form-label">Data de Inicio</label>
-              <input type="date" formControlName="dataInicio" class="form-control" />
+              <input type="date" formControlName="startedAt" class="form-control" />
             </div>
           </div>
-    
+
           <div class="col">
             <div class="form-outline mb-4">
               <label class="form-label">Data de Finalização</label>
-              <input type="date" formControlName="dataFinalizacao" class="form-control" />
+              <input type="date" formControlName="finishedAt" class="form-control" />
             </div>
           </div>
         </div>
-    
+
         <div class="row">
           <div class="col">
             <label class="form-label">Status</label>
             <select formControlName="status" class="form-select">
+              <option value="0">Criado</option>
               <option value="1">Em Progresso</option>
-              <option value="3">Suspenso</option>
-              <option value="4">Cancelado</option>
-              <option value="5">Finalizado</option>
+              <option value="2">Suspenso</option>
+              <option value="3">Cancelado</option>
+              <option value="4">Finalizado</option>
             </select>
           </div>
-    
+
           <div class="col-10">
             <div class="form-outline mb-4">
               <label class="form-label">Comentarios</label>
-              <textarea formControlName="comentarios" class="form-control" rows="5"></textarea>     
+              <textarea formControlName="comments" class="form-control" rows="5"></textarea>
             </div>
           </div>
         </div>
-    
+
         <div class="justify-content-start">
-          <button type="submit" class="btn btn-primary btn-block">Cadastrar Projeto</button>
-          <button type="submit" class="btn btn-primary btn-block ms-2">Cancelar</button>      
-        </div>    
+          <button type="submit" class="btn btn-primary btn-block" (click)="createProject()">Cadastrar Projeto</button>
+          <button type="submit" class="btn btn-primary btn-block ms-2">Cancelar</button>
+        </div>
       </form>
-    </div>    
-  </div>  
+    </div>
+  </div>
 </div>

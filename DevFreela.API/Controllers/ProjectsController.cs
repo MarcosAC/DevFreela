@@ -59,7 +59,7 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "client")]
+        [Authorize(Roles = "client, freelancer")]
         public async Task<IActionResult> Post([FromBody] CreateProjectCommand command)
         {
             //var id = _projectService.Create(inputModel);

@@ -35,7 +35,6 @@ export class UserFormComponent implements OnInit {
   }
 
   createAccount() {
-    //console.log(this.userFormGroup.value);
     this.freelance = {...this.userFormGroup.value}
     console.log(this.freelance);
     this.userService.post(this.freelance)

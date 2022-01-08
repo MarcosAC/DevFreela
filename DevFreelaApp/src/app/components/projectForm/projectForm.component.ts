@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { Project } from 'src/app/models/Project';
+import { ProjectService } from 'src/app/services/ProjectService';
 
 @Component({
   selector: 'app-projectForm',
@@ -10,28 +13,39 @@ export class ProjectFormComponent implements OnInit {
 
   projectFormGroup!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  project!: Project;
+
+  constructor(private formBuilder: FormBuilder, private projectService: ProjectService, private route: ActivatedRoute) {
     this.createForm();
-  }  
+  }
 
   ngOnInit() {
   }
 
   createForm() {
     this.projectFormGroup = this.formBuilder.group({
-      titulo: ['', Validators.required],
-      descricao: ['', Validators.required],
-      valor: ['', Validators.required],
-      dataCriacao: ['', Validators.required],
-      dataInicio: ['', Validators.required],
-      dataFinalizacao: ['', Validators.required],
+      title: ['', Validators.required],
+      description: ['', Validators.required],
+      IdClient: ['', Validators.required],
+      idFreelance: ['', Validators.required],
+      totalCost: ['', Validators.required],
+      startedAt: ['', Validators.required],
+      finishedAt: ['', Validators.required],
+      createdAt: [Date.now()],
       status: ['', Validators.required],
-      comentarios: ['', Validators.required],          
+      comments: ['', Validators.required],
     });
   }
 
   createProject() {
-    console.log(this.projectFormGroup.value);
+    this.project = {...this.projectFormGroup.value}
+    this.projectService.post(this.project)
+    .subscribe(
+      () => {
+        console.log("Projeto criado com sucesso.");
+      }, () => {
+        console.log("Erro ao criar projeto.");
+      }
+    );
   }
-
 }
