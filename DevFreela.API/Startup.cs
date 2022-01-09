@@ -2,22 +2,17 @@ using DevFreela.API.Filters;
 using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Validators;
 using DevFreela.Core.Repositories;
-using DevFreela.Core.Services;
-using DevFreela.Infrastructure.Auth;
 using DevFreela.Infrastructure.Persistence;
 using DevFreela.Infrastructure.Persistence.Repositories;
 using FluentValidation.AspNetCore;
 using MediatR;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Text;
 
 namespace DevFreela.API
 {
@@ -44,7 +39,6 @@ namespace DevFreela.API
             services.AddScoped<IProjectRepository, ProjectRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
-            services.AddScoped<IAuthService, AuthService>();
 
             services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
                 .AddFluentValidation(fluentValidation => fluentValidation.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());
@@ -80,24 +74,6 @@ namespace DevFreela.API
                     }
                 });
             });
-
-            services
-                .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                {
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-
-                        ValidIssuer = Configuration["Jwt:Issuer"],
-                        ValidAudience = Configuration["Jwt:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey
-                        (Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
-                    };
-                });
 
             services.AddCors();
         }

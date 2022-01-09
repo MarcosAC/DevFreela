@@ -71,6 +71,12 @@ C:\Projetos\CursoNetCore\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.API\obj\Debug\net5.0\ref\DevFreela.API.dll
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.pdb
 C:\Projetos\CursoNetCore\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.genruntimeconfig.cache
+C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.AssemblyInfoInputs.cache
+C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.AssemblyInfo.cs
+C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.csproj.CoreCompileInputs.cache
+C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.csproj.AssemblyReference.cache
 C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\appsettings.Development.json
 C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\appsettings.json
 C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.API.exe
@@ -130,13 +136,6 @@ C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Infrastructure.dl
 C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Application.pdb
 C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Core.pdb
 C:\Projetos\DevFreela\DevFreela.API\bin\Debug\net5.0\DevFreela.Infrastructure.pdb
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.csproj.AssemblyReference.cache
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.AssemblyInfoInputs.cache
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.AssemblyInfo.cs
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.csproj.CoreCompileInputs.cache
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\DevFreela.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\staticwebassets\DevFreela.API.StaticWebAssets.Manifest.cache
 C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\staticwebassets\DevFreela.API.StaticWebAssets.xml
 C:\Projetos\DevFreela\DevFreela.API\obj\Debug\net5.0\scopedcss\bundle\DevFreela.API.styles.css
