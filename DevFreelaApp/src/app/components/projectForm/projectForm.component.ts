@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { Project } from 'src/app/models/Project';
 import { ProjectService } from 'src/app/services/ProjectService';
 
@@ -9,17 +11,21 @@ import { ProjectService } from 'src/app/services/ProjectService';
   templateUrl: './projectForm.component.html',
   styleUrls: ['./projectForm.component.css']
 })
-export class ProjectFormComponent implements OnInit {
+export class ProjectFormComponent implements OnInit, OnDestroy {
 
   projectFormGroup!: FormGroup;
-
   project!: Project;
+
+  public projects!: Project[];
+
+  private unsubscriber = new Subject();
 
   constructor(private formBuilder: FormBuilder, private projectService: ProjectService, private route: ActivatedRoute) {
     this.createForm();
   }
 
   ngOnInit() {
+    this.listProjects();
   }
 
   createForm() {
@@ -48,4 +54,22 @@ export class ProjectFormComponent implements OnInit {
       }
     );
   }
+
+  // listProjects() {
+  //   this.projectService.getAll()
+  //   .pipe(takeUntil(this.unsubscriber))
+  //   .subscribe((projects: Project[]) => {
+  //       this.projects = projects;
+  //       console.log("Projetos carregados com sucesso.");
+  //     }, (error: any) => {
+  //       console.log("Erro ao carregados Projetos.");
+  //     }
+  //   );
+  // }
+
+  ngOnDestroy(): void {
+    this.unsubscriber.next();
+    this.unsubscriber.complete();
+  }
 }
+
